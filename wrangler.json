@@ -1,0 +1,31 @@
+{
+  "name": "ft5-server",
+  "main": "src/index.js",
+  "compatibility_date": "2024-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MATCH_ROOM",
+        "class_name": "MatchRoom"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["MatchRoom"]
+    }
+  ],
+
+  "vars": {
+    "API_URL": "https://script.google.com/macros/s/AKfycbz1QdPZPqww6j9Fi-Y40Y1dJNeZNNlKps0LqGlUAZOJsHQMSoo8zLkAIv9O4WTbxbl2/exec",
+    "ALLOWED_ORIGINS": "https://https://transportationsline.github.io/FT5/.github.io"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}
