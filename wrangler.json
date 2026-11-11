@@ -1,6 +1,31 @@
-"migrations": [
-  {
-    "tag": "v1",
-    "new_sqlite_classes": ["MatchRoom"]
+{
+  "name": "ft5-server",
+  "main": "src/index.js",
+  "compatibility_date": "2024-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MATCH_ROOM",
+        "class_name": "MatchRoom"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["MatchRoom"]
+    }
+  ],
+
+  "vars": {
+    "API_URL": "https://script.google.com/macros/s/AKfycbxpYqC8i-oRgDsRg5Sk_ASuWJrsXrHmkl6aIY61_-L4hzSGgG06Wr0rHQoJVtwrSoSi/exec",
+    "ALLOWED_ORIGINS": "https://YOUR-USERNAME.github.io"
+  },
+
+  "observability": {
+    "enabled": true
   }
-]
+}
