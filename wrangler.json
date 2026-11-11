@@ -22,7 +22,7 @@
 
   "vars": {
     "API_URL": "https://script.google.com/macros/s/AKfycbxpYqC8i-oRgDsRg5Sk_ASuWJrsXrHmkl6aIY61_-L4hzSGgG06Wr0rHQoJVtwrSoSi/exec",
-    "ALLOWED_ORIGINS": "https://YOUR-USERNAME.github.io"
+    "ALLOWED_ORIGINS": "https://dawoodalshikali.github.io"
   },
 
   "observability": {
